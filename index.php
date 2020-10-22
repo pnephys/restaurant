@@ -1,4 +1,9 @@
 <?php
+namespace App;
+require "src/Autoloader.php";
+Autoloader::register();
+
+$db = new Database('restaurant');
 
 $tabMenu=[
     "home" => "page/home.php",
